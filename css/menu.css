@@ -1,0 +1,108 @@
+nav {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+#mainmenu,
+#mainmenu ul,
+#mainmenu ul li,
+#mainmenu ul li a {
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#mainmenu > ul > li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#mainmenu > ul > li > a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 22px 0 22px 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 0;
+  position: relative;
+}
+
+@media (min-width: 1001px) and (max-width: 1280px) {
+  #mainmenu > ul > li {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .container {
+    width: 100%;
+  }
+
+  header {
+    position: fixed;
+    top: 0 !important;
+    height: 60px;
+    background: #fff;
+  }
+  header .logo-col {
+    width: 30%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: 0 0 0 20px;
+  }
+  header .logo-col img {
+    width: 90px;
+  }
+  header #mainmenu {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  header.sticky-header #mainmenu {
+    margin-top: 0;
+  }
+  #mainmenu ul {
+    background: #fff;
+    width: 100%;
+    display: none;
+    z-index: 100;
+    top: 60px;
+    padding: 0;
+  }
+
+  .button {
+    width: 25px;
+    height: 32px;
+    position: fixed;
+    right: 10px;
+    top: 6px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .button:after {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    display: block;
+    height: 5px;
+    width: 25px;
+    border-top: 2px solid #f89785;
+    border-bottom: 2px solid #f89785;
+    content: "";
+  }
+  .button:before {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #f89785;
+    content: "";
+  }
+}
